@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-using namespace std;
+typedef std::string string;
 
 class Zombie
 {

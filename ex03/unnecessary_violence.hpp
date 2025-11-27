@@ -14,7 +14,7 @@
 # define UNNECESSARY_VIOLENCE_H
 
 # include <iostream>
-using namespace	std;
+typedef std::string string;
 # include "Weapon.hpp"
 # include "Human.hpp"
 

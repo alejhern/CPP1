@@ -28,16 +28,16 @@ class Human
 	{
 	}
 
-	virtual ~Human()
+	~Human()
 	{
 	}
 
-	virtual void attack() const
+	void attack() const
 	{
 		if (_weapon)
-			cout << _name << " attacks with their " << _weapon->getType() << endl;
+			std::cout << _name << " attacks with their " << _weapon->getType() << std::endl;
 		else
-			cout << _name << " has no weapon!" << endl;
+			std::cout << _name << " has no weapon!" << std::endl;
 	}
 
 	void setWeapon(Weapon &weapon)

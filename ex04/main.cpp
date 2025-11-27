@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 #include <fstream>
 #include <iostream>
-#include <string>
 
-using namespace	std;
+typedef std::string string;
+typedef std::ifstream ifstream;
+typedef std::ofstream ofstream;
 
 static int	openstreams(const string &filename, ifstream &input_file,
 		ofstream &output_file)
@@ -21,13 +22,13 @@ static int	openstreams(const string &filename, ifstream &input_file,
 	input_file.open(filename.c_str());
 	if (!input_file)
 	{
-		cout << "Error: Could not open file " << filename << endl;
+		std::cout << "Error: Could not open file " << filename << std::endl;
 		return (1);
 	}
 	output_file.open((filename + ".replace").c_str());
 	if (!output_file)
 	{
-		cout << "Error: Could not create file " << filename << ".replace" << endl;
+		std::cout << "Error: Could not create file " << filename << ".replace" << std::endl;
 		return (1);
 	}
 	return (0);
@@ -48,7 +49,7 @@ static void	replace_word(const string &s1, const string &s2,
 			line.insert(pos, s2);
 			pos += s2.length();
 		}
-		output_file << line << endl;
+		output_file << line << std::endl;
 	}
 }
 
@@ -62,7 +63,7 @@ int	main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		cout << "Usage: " << argv[0] << " <filename> <string1> <string2>" << endl;
+		std::cout << "Usage: " << argv[0] << " <filename> <string1> <string2>" << std::endl;
 		return (1);
 	}
 	filename = argv[1];

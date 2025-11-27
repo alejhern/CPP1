@@ -12,7 +12,7 @@
 
 #include <iostream>
 
-using namespace	std;
+typedef std::string string;
 
 int	main(void)
 {
@@ -20,13 +20,12 @@ int	main(void)
 	string &stringREF = sample;
 	string *stringPTR = &sample;
 
-	cout << "Memory address of sample: " << &sample << endl;
-	cout << "Memory address held by stringPTR: " << stringPTR << endl;
-	cout << "Memory address held by stringREF: " << &stringREF << endl;
-
-	cout << "Value of sample: " << sample << endl;
-	cout << "Value pointed to by stringPTR: " << *stringPTR << endl;
-	cout << "Value pointed to by stringREF: " << stringREF << endl;
+	std::cout << "Memory address of sample: " << &sample << std::endl;
+	std::cout << "Memory address held by stringPTR: " << stringPTR << std::endl;
+	std::cout << "Memory address held by stringREF: " << &stringREF << std::endl;
+	std::cout << "Value of sample: " << sample << std::endl;
+	std::cout << "Value pointed to by stringPTR: " << *stringPTR << std::endl;
+	std::cout << "Value pointed to by stringREF: " << stringREF << std::endl;
 
 	return (0);
 }

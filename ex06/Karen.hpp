@@ -13,7 +13,7 @@
 #ifndef KAREN_H
 # define KAREN_H
 # include <iostream>
-using namespace	std;
+typedef std::string string;
 
 # define DEFAULT "\001\033[0;39m\002"
 # define RED "\001\033[1;91m\002"
