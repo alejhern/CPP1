@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    .gitignore                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: alejhern <alejhern@student.42barcelona.co  +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/11/27 21:22:03 by alejhern          #+#    #+#              #
+#    Updated: 2025/11/27 21:22:07 by alejhern         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+*.o
+zombie
+zombie_horde
+hi_this_is_brain
+unnecessary_violence
+sed_is_for_losers
+karen_2.0
+karen_filter
